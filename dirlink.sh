@@ -8,8 +8,10 @@
 #ls -ialh file.txt
 #find . -inum 1234
 
-read -p 'SRC Dir:' SRC
-read -p 'DST Dir:' DST
+if [ $# -eq 0 ]; then
+    read -p 'SRC Dir:' SRC
+    read -p 'DST Dir:' DST
+fi
 
 # #最后面不要加斜杠
 # SRC="/share/Download/tmp/src"
