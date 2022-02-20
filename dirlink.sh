@@ -8,11 +8,14 @@
 #ls -ialh file.txt
 #find . -inum 1234
 
-#最后面不要加斜杠
-SRC="/share/Download/tmp/src"
-DST="/share/Download/tmp/dst"
+read -p 'SRC Dir:' SRC
+read -p 'DST Dir:' DST
 
-FILEGIG=1000000c
+# #最后面不要加斜杠
+# SRC="/share/Download/tmp/src"
+# DST="/share/Download/tmp/dst"
+
+FILEGIG=5000000c
 
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
